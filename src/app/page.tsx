@@ -23,13 +23,15 @@ const Home = () => {
 
 
   return (
-    <main ref={container} className="relative h-[200vh]">
+    <main >
+      <div ref={container} className="relative h-[200vh]">
       <Hero scrollYProgress={scrollYProgress} />
       <TechStack scrollYProgress={scrollYProgress} />
-      {/* <FeaturedProject />
+      </div>
+      <FeaturedProject />
       <Experience />
       <About />
-      <Contact /> */}
+      <Contact />
     </main>
   )
 }

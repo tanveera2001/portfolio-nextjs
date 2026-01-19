@@ -1,5 +1,4 @@
-import Image from "next/image"
-import Pic2 from '../../public/images/2.jpeg'
+
 
 import { MotionValue } from "framer-motion";
 
@@ -9,8 +8,8 @@ type Props = {
 
 const TechStack = ({ scrollYProgress }: Props) => {
   return (
-    <div className="relative h-screen">
-      <Image src={Pic2} alt="img" placeholder="blur" fill />
+    <div className="relative h-screen bg-gray-400 flex items-center justify-center">
+      <p className="text-red-600 text-[3.5vw]">Tech Stack</p>
 
     </div>
   )
