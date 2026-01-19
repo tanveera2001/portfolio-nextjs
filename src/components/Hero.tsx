@@ -49,12 +49,50 @@ const Hero = ({ scrollYProgress }: Props) => {
 
         {/* CALL TO ACTION BUTTONS */}
         <div className="flex gap-4">
-          <button className="px-6 py-3 bg-white text-[#C72626] rounded-lg font-medium">
+          {/* PRIMARY BUTTON */}
+          <motion.button
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.94 }}
+            transition={{ type: "spring", stiffness: 280, damping: 18 }}
+            className="
+              w-32 sm:w-40 md:w-44
+              px-4 sm:px-5 md:px-6
+              py-2 sm:py-2.5 md:py-3
+              text-sm sm:text-base
+              rounded-full
+              bg-white text-[#C72626]
+              font-medium
+              relative overflow-hidden
+              shadow-md
+              hover:shadow-[0_0_20px_rgba(255,255,255,0.9)]
+              cursor-pointer
+            "
+          >
             View Projects
-          </button>
-          <button className="px-6 py-3 border border-white rounded-lg font-medium">
+          </motion.button>
+
+          {/* OUTLINE BUTTON */}
+          <motion.button
+            whileHover={{ scale: 1.07 }}
+            whileTap={{ scale: 0.94 }}
+            transition={{ type: "spring", stiffness: 280, damping: 18 }}
+            className="
+              w-32 sm:w-40 md:w-44
+              px-4 sm:px-5 md:px-6
+              py-2 sm:py-2.5 md:py-3
+              text-sm sm:text-base
+              rounded-full
+              border border-white
+              text-white
+              font-medium
+              relative overflow-hidden
+              hover:border-white/80
+              hover:shadow-[0_0_22px_rgba(255,255,255,0.85)]
+              cursor-pointer
+            "
+          >
             Resume
-          </button>
+          </motion.button>
         </div>
       </div>
     </motion.div>
