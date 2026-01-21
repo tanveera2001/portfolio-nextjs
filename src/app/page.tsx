@@ -8,6 +8,7 @@ import TechStack from "@/components/TechStack"
 import { useEffect, useRef } from "react"
 import { useScroll } from 'framer-motion';
 import Experience from "@/components/Experience/Experience";
+import Footer from "@/components/Footer";
 
 
 
@@ -33,6 +34,7 @@ const Home = () => {
       <Experience />
       <About />
       <Contact />
+      <Footer></Footer>
     </main>
   )
 }
