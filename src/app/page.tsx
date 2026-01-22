@@ -9,6 +9,7 @@ import { useEffect, useRef } from "react"
 import { useScroll } from 'framer-motion';
 import Experience from "@/components/Experience/Experience";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 
 
@@ -21,21 +22,46 @@ const Home = () => {
     offset: ["start start", "end end"]
   });
 
-  useEffect(() => {},[]);
+  useEffect(() => { }, []);
 
 
   return (
-    <main >
-      <div ref={container} className="relative h-[200vh]">
-      <Hero scrollYProgress={scrollYProgress} />
-      <TechStack scrollYProgress={scrollYProgress} />
-      </div>
-      <FeaturedProject />
-      <Experience />
-      <About />
-      <Contact />
-      <Footer></Footer>
-    </main>
+    <main>
+  <Navbar />
+
+  {/* Hero Section */}
+  <div id="hero" ref={container} className="relative h-[200vh]">
+    <Hero scrollYProgress={scrollYProgress} />
+    {/* TechStack Section */}
+  <div id="techstack">
+    <TechStack scrollYProgress={scrollYProgress} />
+  </div>
+  </div>
+
+  
+
+  {/* Featured Projects */}
+  <div id="featured-project">
+    <FeaturedProject />
+  </div>
+
+  {/* Experience */}
+  <div id="experience">
+    <Experience />
+  </div>
+
+  {/* About */}
+  <div id="about">
+    <About />
+  </div>
+
+  {/* Contact */}
+  <div id="contact">
+    <Contact />
+  </div>
+
+  <Footer />
+</main>
   )
 }
 
