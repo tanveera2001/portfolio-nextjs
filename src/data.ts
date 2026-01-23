@@ -35,3 +35,43 @@ export const projects = [
     color: "#88A28D"
   }
 ]
+
+
+const cards: CardType[] = [
+  {
+    url: "/images/intrinsic-light.png",
+    overlayUrl: "/images/portfolio.png",
+    title: "Portfolio",
+    titleColor: "#2c2180",
+    id: 1,
+  },
+  {
+    url: "/images/whalesync-light.png",
+    overlayUrl: "/images/authentication.png",
+    title: "Authentication",
+    titleColor: "#3c70e8",
+    id: 5,
+  },
+  {
+    url: "/images/shimmer-light.png",
+    overlayUrl: "/images/famous-burger.png",
+    title: "Famous Burger",
+    titleColor: "#7C2D12",
+    id: 4,
+  },
+  {
+    url: "/images/pave-light.png",
+    overlayUrl: "/images/universal-calendar.png",
+    title: "Universal Calendar",
+    titleColor: "#1ac4bf",
+    id: 2,
+  },
+  {
+    url: "/images/hotplate-light.png",
+    overlayUrl: "/images/kopila-clinic-dashboard.png",
+    title: "Dashboard",
+    titleColor: "#d44339",
+    id: 6,
+  },
+];
+export { cards };
