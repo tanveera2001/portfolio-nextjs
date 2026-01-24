@@ -37,7 +37,16 @@ export const projects = [
 ]
 
 
-const cards: CardType[] = [
+
+export type projectcardType = {
+  url: string;
+  overlayUrl: string;
+  title: string;
+  titleColor:string;
+  id: number;
+}
+
+export const projectCards: projectcardType[] = [
   {
     url: "/images/intrinsic-light.png",
     overlayUrl: "/images/portfolio.png",
@@ -49,21 +58,21 @@ const cards: CardType[] = [
     url: "/images/whalesync-light.png",
     overlayUrl: "/images/authentication.png",
     title: "Authentication",
-    titleColor: "#3c70e8",
+    titleColor: "#3c70e8", 
     id: 5,
   },
   {
     url: "/images/shimmer-light.png",
     overlayUrl: "/images/famous-burger.png",
     title: "Famous Burger",
-    titleColor: "#7C2D12",
+    titleColor: "#7C2D12", 
     id: 4,
   },
   {
     url: "/images/pave-light.png",
     overlayUrl: "/images/universal-calendar.png",
     title: "Universal Calendar",
-    titleColor: "#1ac4bf",
+    titleColor: "#1ac4bf", 
     id: 2,
   },
   {
@@ -74,4 +83,3 @@ const cards: CardType[] = [
     id: 6,
   },
 ];
-export { cards };
